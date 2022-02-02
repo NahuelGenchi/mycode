@@ -259,3 +259,57 @@ body {
 .mainContact__form input {
     margin: 40px 25px 0 0;
 }
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: red;
+    margin: 75px auto 0 auto;
+}
+
+.box2 {
+    transition: width 2s;
+}
+
+.box3 {
+    transition: height 2s;
+}
+
+.box4 {
+    transition: height, width 2s;
+}
+
+.box1:hover {
+    transform: scale(2,1);
+}
+
+.box2:hover {
+    width: 300px;
+}
+
+.box3:hover {
+    height: 300px;
+}
+
+.box4:hover {
+    background-color: royalblue;
+    height: 300px;
+    width: 300px;
+
+}
+
+@keyframes ejemplo {
+    from {background-color: red;}
+    to {background-color: yellow;
+    width: 600px;}
+}
+  
+  /* The element to apply the animation to */
+.box5:hover {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: ejemplo;
+    animation-duration: 4s;
+}
