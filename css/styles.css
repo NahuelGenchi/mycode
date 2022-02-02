@@ -1,0 +1,261 @@
+/* index.html */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.header {
+    height: 10vh;
+    background-color: antiquewhite;
+}
+
+.header__logo {
+    position: absolute;
+    left: 5%;
+    width: 500px;
+}
+
+.header__logo img {
+    width: 35px;
+    margin: 5px;
+}
+
+.header__logo h1 {
+    margin: 5px;
+    position: absolute;
+    display: inline-block;
+    left: 80px;
+    top: 3px;
+}
+
+.header__ul {
+    list-style-type: none;
+    height: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__ul li {
+    padding: 1%;
+    text-align: center;
+}
+
+.header__ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.header__ul li a:hover {
+    background-color: white;
+}
+
+.header__decorationBar {
+    width: 100%;
+    height: 3vh;
+    background-color: rgb(243, 239, 234);
+}
+
+.main {
+    height: 83vh;
+}
+
+.main__span--black {
+    background-color: #1B1B1B;
+    color: white;
+}
+
+.main__section h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 125px 0 0 0;
+}
+
+.main__img {
+    width: 730px;
+    height: 100px;
+    margin: 50px auto 0 auto;
+    background-image: url(../img/banner.jpg);
+}
+
+.main__pImg {
+    display: block;
+}
+
+.main__pImg p {
+    text-align: left;
+    width: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 350px;
+    left: 200px;
+}
+
+.main__pImg img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    top: 350px;
+    right: 300px;
+}
+
+.footer {
+    background-color: mistyrose;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer p {
+    color: black;
+}
+
+/* glossary.html */
+
+.mainGlossary {
+    /* height: fit-content; */
+    height: 83vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(4, 20.75vh);
+    grid-template-areas: 
+    "nav section section section"
+    "nav section section section"
+    "nav section section section"
+    "nav section section section"
+    ;
+}
+
+.mainGlossary__ul {
+    display: flex;
+    flex-direction: column;
+    height: 83vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    grid-area: nav;
+}
+
+.mainGlossary__ul li {
+    list-style-type: none;
+    padding: 10px 10px 10px 30px;
+}
+
+.mainGlossary__ul li:hover {
+    background-color: gainsboro;
+}
+
+.mainGlossary__ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.mainGlossary__ul li a:visited {
+    text-decoration: none;
+    color: #1B1B1B;
+}
+
+.mainGlossary__section {
+    grid-area: section;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.mainGlossary__content {
+    width: 65vw;
+    margin: auto;
+    padding: 50px 0 50px 0;
+}
+
+.mainGlossary__content h1 {
+    font-size: 2.5rem;
+}
+
+.mainGlossary__content h2 {
+    padding: 40px 25px 0 0;
+}
+
+.mainGlossary__content img {
+    width: 35vw;
+    padding: 40px 25px 0 0;
+}
+
+.mainGlossary__content p {
+    padding: 40px 25px 0 0;
+}
+
+.mainGlossary__ul--ulist {
+    padding: 40px 25px 0 25px;
+}
+
+.mainGlossary__ul--ulist li {
+    padding: 5px;
+}
+
+.highlightedWord {
+    background-color: transparent;
+    font-weight: bold;
+    border: 1px gray solid;
+}
+
+.mainContact {
+    height: 83vh;
+    width: 100vw;
+}
+
+.mainContact__section {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.mainContact__content {
+    width: 70vw;
+    height: 83vh;
+    margin: auto;
+    padding: 50px 0 50px 0;
+}
+
+.mainContact__content h1 {
+    font-size: 2.5rem;
+    padding: 40px 25px 0 0;
+}
+
+.mainContact__content h2 {
+    padding: 40px 25px 0 0;
+}
+
+.mainContact__content img {
+    width: 35vw;
+    padding: 40px 25px 0 0;
+}
+
+.mainContact__content p {
+    padding: 40px 25px 0 0;
+}
+
+.mainContact__ul--ulist {
+    padding: 40px 25px 0 25px;
+}
+
+.mainContact__ul--ulist li {
+    padding: 5px;
+}
+
+.mainContact__form textarea {
+    display: block;
+    margin: 40px 25px 0 0;
+}
+
+.mainContact__form input {
+    margin: 40px 25px 0 0;
+}
